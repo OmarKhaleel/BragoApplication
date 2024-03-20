@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/ThirdSetupPageImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/thirdsetuppage"
+        android:contentDescription="@string/photo_for_third_onboarding_page" />
+
+    <TextView
+        android:id="@+id/CompetitionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/we_are_all_about_igniting_fierce_healthy_competition"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        style="@style/TextViewStyle"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/DescriptionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/we_want_to_push_everyone_on_this_platform_to_become_the_best_version_of_themselves_through_competition"
+        android:textSize="16sp"
+        android:layout_marginBottom="96dp"
+        android:layout_marginHorizontal="48dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/RegisterBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_an_account"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="16dp"
+        style="@style/FirstButtonStyle"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/LoginBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="16dp"
+        style="@style/SecondButtonStyle"/>
+
+</LinearLayout>

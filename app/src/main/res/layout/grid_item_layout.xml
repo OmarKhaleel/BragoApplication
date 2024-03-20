@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="220dp">
+
+    <FrameLayout
+        android:id="@+id/FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="false">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/art_picture"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/CategoryPicture"
+            android:adjustViewBounds="true"/>
+
+        <CheckBox
+            android:id="@+id/Checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/CategoryTitleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="18dp"
+            android:text="@string/category_title"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/CategoryPostsTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="178dp"
+            android:layout_marginStart="18dp"
+            android:text="@string/posts"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/HeartIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="12dp"
+        android:src="@drawable/ic_dull_heart"
+        android:contentDescription="@string/like_image" />
+
+</RelativeLayout>

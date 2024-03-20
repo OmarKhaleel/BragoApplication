@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountSettings">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AccountSettingsAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/AccountSettingsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="96dp">
+
+            <ImageButton
+                android:id="@+id/DiscardChangesImageButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_cancel_24"
+                android:layout_gravity="start"
+                android:background="@null"
+                android:contentDescription="@string/cancel_edit_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/SubmitChangesImageButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/baseline_done_24"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:contentDescription="@string/submit_edit_profile" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ProfilePictureSIV"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/profile"
+        android:layout_below="@+id/AccountSettingsAppBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        app:shapeAppearanceOverlay="@style/CircularProfilePicture"
+        app:strokeWidth="3dp"
+        app:strokeColor="@color/pool_blue"
+        android:padding="5dp"/>
+
+    <ImageButton
+        android:id="@+id/AddPhotoIB"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="210dp"
+        android:src="@drawable/ic_camera"
+        android:contentDescription="@string/pick_profile_picture_photo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/FullNameTIL"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/AddPhotoIB"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/FullNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            android:background="@null"
+            android:autofillHints="FullName"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/UsernameTIL"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/FullNameTIL"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/UsernameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:background="@null"
+            android:autofillHints="Username"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/BioTIL"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/UsernameTIL"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/BioET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bio"
+            android:background="@null"
+            android:autofillHints="Bio"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/LogoutBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textSize="18sp"
+        android:layout_above="@+id/DeleteAccountBTN"
+        android:layout_marginHorizontal="16dp"
+        style="@style/FirstButtonStyle"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/DeleteAccountBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_account"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        style="@style/SecondButtonStyle"/>
+
+</RelativeLayout>

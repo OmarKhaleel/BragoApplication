@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakePostActivity">
+
+    <FrameLayout
+        android:id="@+id/FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:weightSum="2"
+        android:background="@drawable/round_white_background_tabs"
+        android:layout_marginTop="670dp"
+        android:layout_marginStart="180dp">
+
+        <TextView
+            android:id="@+id/OneTimeFlexTab"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="One-time Flex"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/TimeSeriesTab"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="Time Series"
+            android:textColor="#A2A2A2"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

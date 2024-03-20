@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "942031829362",
+    "project_id": "brago-application",
+    "storage_bucket": "brago-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942031829362:android:a695544a06cb3b621705eb",
+        "android_client_info": {
+          "package_name": "com.example.bragoproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942031829362-d4ch7h3k6vmkgo6hqursfpch4vsq0fql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClNwQZMs851PMEt3ea0ufbuC9ksYvnclI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942031829362-d4ch7h3k6vmkgo6hqursfpch4vsq0fql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

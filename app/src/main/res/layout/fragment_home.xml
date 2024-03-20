@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/HomeAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/HomeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:background="@drawable/round_edges_page_blue">
+
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/drop_down_button"
+                android:background="@color/pool_blue"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/dropdown_image_button" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ProfilePictureSIV"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:layout_margin="18dp"
+                android:src="@drawable/profile"
+                app:shapeAppearanceOverlay="@style/CircularProfilePicture"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:padding="5dp"
+                android:clickable="true"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/HomeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/HomeAppBarLayout">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_fragment"
+        android:textSize="28sp"
+        android:layout_gravity="center"/>
+
+</RelativeLayout>

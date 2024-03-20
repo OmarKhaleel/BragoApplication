@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeSeriesFlexNext">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/MakePostAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/MakePostToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <ImageButton
+                android:id="@+id/X_BTN"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/xbutton"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_margin="8dp"
+                android:onClick="onBackButtonClick"
+                android:contentDescription="@string/x_image_button_in_login_page_that_leads_back_to_previous_page" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Post"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/NextBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:layout_gravity="end"
+                android:layout_marginEnd="24dp"
+                android:clickable="true"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:layout_below="@+id/MakePostAppBarLayout"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"/>
+
+<!--        <com.ernestoyaquello.dragdropswiperecyclerview.DragDropSwipeRecyclerView-->
+<!--            android:id="@+id/list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:behind_swiped_item_icon_margin="16dp"-->
+<!--            app:divider="@drawable/list_divider"-->
+<!--            app:item_layout="@layout/list_item_layout" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

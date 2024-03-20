@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginHorizontal="8dp"
+    style="@style/EditTextStyle">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/UserProfilePictureSearch"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            app:shapeAppearanceOverlay="@style/CircularProfilePicture"
+            android:padding="15dp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/UsernameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username_user"
+            android:textSize="18sp"
+            style="@style/TextViewStyle"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="105dp"/>
+
+        <TextView
+            android:id="@+id/FullNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/full_name_user"
+            android:textSize="12sp"
+            style="@style/TextViewStyle"
+            android:textStyle="bold"
+            android:layout_marginTop="55dp"
+            android:layout_marginStart="105dp"/>
+        
+        <Button
+            android:id="@+id/FollowBTN"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:text="@string/follow"
+            android:textAllCaps="false"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="250dp"
+            android:background="@drawable/first_button_layout"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

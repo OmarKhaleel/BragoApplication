@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CircularProfilePicture">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CategoryPicture">
+        <item name="cornerSize">15%</item>
+    </style>
+</resources>
